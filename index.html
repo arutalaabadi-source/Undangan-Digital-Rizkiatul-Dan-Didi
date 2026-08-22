@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Undangan Pernikahan">
+  <title>Undangan Pernikahan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="opening" class="opening">
+    <div class="opening-bg"></div>
+    <div class="opening-content">
+      <p class="eyebrow">THE WEDDING OF</p>
+      <h1><span id="openingGroom">Ari</span> &amp; <span id="openingBride">Ayu</span></h1>
+      <p class="opening-date" id="openingDate">20 Desember 2026</p>
+      <p class="guest-label">Kepada Yth.</p>
+      <h3 id="guestName">Tamu Undangan</h3>
+      <button id="openInvitation" class="btn">Buka Undangan</button>
+    </div>
+  </div>
+
+  <main id="mainContent" class="hidden">
+
+    <nav class="navbar">
+      <div class="nav-logo">A &amp; A</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#couple">Mempelai</a>
+        <a href="#event">Acara</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+      <button id="musicButton" class="music-btn" aria-label="Putar musik">♫</button>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">WE ARE GETTING MARRIED</p>
+        <h1><span id="heroGroom">Ari</span> <i>&amp;</i> <span id="heroBride">Ayu</span></h1>
+        <p id="heroDate">20 Desember 2026</p>
+        <div class="hero-divider">✦</div>
+        <p id="heroVenue">Gedung Pernikahan</p>
+      </div>
+      <div class="scroll-down">SCROLL<br><span>↓</span></div>
+    </section>
+
+    <section class="intro section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">A MOMENT TO REMEMBER</p>
+        <h2>Dengan penuh cinta,<br>kami mengundang Anda.</h2>
+        <p>
+          Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa,
+          kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir
+          dan memberikan doa restu pada hari bahagia kami.
+        </p>
+      </div>
+    </section>
+
+    <section id="couple" class="couple section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">THE HAPPY COUPLE</p>
+          <h2>Mempelai</h2>
+        </div>
+
+        <div class="couple-grid">
+          <article class="person reveal">
+            <div class="portrait">
+              <img src="PUT_pria.jpg_HERE.JPG" alt="Mempelai pria" onerror="this.src='https://placehold.co/700x850/e9dfd3/6d6258?text=Foto+Pria'">
+            </div>
+            <h3 id="groomName">Ari</h3>
+            <p>Putra dari</p>
+            <strong id="groomParents">Bapak Nama Ayah &amp; Ibu Nama Ibu</strong>
+            <a id="groomInstagram" href="#" target="_blank" class="social">@instagram</a>
+          </article>
+
+          <div class="ampersand reveal">&amp;</div>
+
+          <article class="person reveal">
+            <div class="portrait">
+              <img src="PUT_wanita.jpg_HERE.JPG" alt="Mempelai wanita" onerror="this.src='https://placehold.co/700x850/e9dfd3/6d6258?text=Foto+Wanita'">
+            </div>
+            <h3 id="brideName">Ayu</h3>
+            <p>Putri dari</p>
+            <strong id="brideParents">Bapak Nama Ayah &amp; Ibu Nama Ibu</strong>
+            <a id="brideInstagram" href="#" target="_blank" class="social">@instagram</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="event" class="event section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SAVE THE DATE</p>
+          <h2>Acara Pernikahan</h2>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-item">
+            <span class="event-icon">◌</span>
+            <h3>Akad Nikah</h3>
+            <p id="akadDate">Minggu, 20 Desember 2026</p>
+            <p id="akadTime">08.00 WIB - Selesai</p>
+          </div>
+          <div class="event-line"></div>
+          <div class="event-item">
+            <span class="event-icon">♢</span>
+            <h3>Resepsi</h3>
+            <p id="receptionDate">Minggu, 20 Desember 2026</p>
+            <p id="receptionTime">11.00 - 14.00 WIB</p>
+          </div>
+        </div>
+
+        <div class="venue reveal">
+          <p class="eyebrow">LOCATION</p>
+          <h3 id="venueName">Nama Gedung / Venue</h3>
+          <p id="venueAddress">Alamat lengkap lokasi acara</p>
+          <a id="mapsButton" href="#" target="_blank" class="btn outline">Buka Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">COUNTING THE DAYS</p>
+        <h2>Menuju Hari Bahagia</h2>
+        <div class="countdown-grid">
+          <div><strong id="days">00</strong><span>Hari</span></div>
+          <div><strong id="hours">00</strong><span>Jam</span></div>
+          <div><strong id="minutes">00</strong><span>Menit</span></div>
+          <div><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Perjalanan Cinta</h2>
+        <div class="story-card">
+          <div class="story-year">2023</div>
+          <h3>Awal Pertemuan</h3>
+          <p>Isi cerita singkat tentang bagaimana kalian pertama kali bertemu.</p>
+        </div>
+        <div class="story-card">
+          <div class="story-year">2024</div>
+          <h3>Semakin Dekat</h3>
+          <p>Isi cerita tentang perjalanan hubungan kalian.</p>
+        </div>
+        <div class="story-card">
+          <div class="story-year">2026</div>
+          <h3>Menuju Hari Bahagia</h3>
+          <p>Setelah perjalanan panjang, akhirnya kami memutuskan untuk melangkah bersama.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">OUR MOMENTS</p>
+          <h2>Galeri</h2>
+        </div>
+        <div class="gallery-grid">
+          <img class="reveal" src="PUT_foto1.jpg_HERE.JPG" alt="Foto 1" onerror="this.src='https://placehold.co/900x1100/e9dfd3/6d6258?text=Foto+1'">
+          <img class="reveal" src="PUT_foto2.jpg_HERE.JPG" alt="Foto 2" onerror="this.src='https://placehold.co/900x700/e1d5c8/6d6258?text=Foto+2'">
+          <img class="reveal" src="PUT_foto3.jpg_HERE.JPG" alt="Foto 3" onerror="this.src='https://placehold.co/900x1100/ddd0c2/6d6258?text=Foto+3'">
+          <img class="reveal" src="PUT_foto4.jpg_HERE.JPG" alt="Foto 4" onerror="this.src='https://placehold.co/900x700/d8cabc/6d6258?text=Foto+4'">
+          <img class="reveal" src="PUT_foto5.jpg_HERE.JPG" alt="Foto 5" onerror="this.src='https://placehold.co/900x1100/e9dfd3/6d6258?text=Foto+5'">
+          <img class="reveal" src="PUT_foto6.jpg_HERE.JPG" alt="Foto 6" onerror="this.src='https://placehold.co/900x700/e1d5c8/6d6258?text=Foto+6'">
+        </div>
+      </div>
+    </section>
+
+    <section class="gift section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">WEDDING GIFT</p>
+        <h2>Hadiah Pernikahan</h2>
+        <p>Bagi yang ingin memberikan tanda kasih, dapat melalui rekening berikut.</p>
+        <div class="gift-card">
+          <span class="bank" id="bankName">BANK BCA</span>
+          <strong id="bankNumber">1234567890</strong>
+          <p>a.n. <span id="accountName">Nama Pengantin</span></p>
+          <button class="copy-btn" data-copy="1234567890">Salin Nomor Rekening</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">RSVP</p>
+        <h2>Konfirmasi Kehadiran</h2>
+        <p>Mohon konfirmasi kehadiran melalui WhatsApp.</p>
+        <a id="rsvpButton" href="#" target="_blank" class="btn">Konfirmasi via WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">THANK YOU</p>
+        <h2><span id="closingGroom">Ari</span> &amp; <span id="closingBride">Ayu</span></h2>
+        <p>Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+        <div class="hero-divider">✦</div>
+        <p>See you on our special day.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ♡ for our special day</p>
+    </footer>
+  </main>
+
+  <audio id="weddingMusic" loop>
+    <source src="PUT_music.mp3_HERE.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

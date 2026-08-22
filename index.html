@@ -6,49 +6,56 @@
 
     <title>Rizkiatul Fuaziah & Didi</title>
 
-    <meta name="description"
-          content="Undangan Pernikahan Rizkiatul Fuaziah & Didi">
+    <meta name="description" content="Undangan Pernikahan Rizkiatul Fuaziah & Didi">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- =====================================================
-     OPENING
+     OPENING SCREEN
 ===================================================== -->
 
 <div id="opening">
 
+    <div class="opening-pattern"></div>
     <div class="opening-overlay"></div>
+
+    <div class="opening-decoration decoration-left">❁</div>
+    <div class="opening-decoration decoration-right">❁</div>
 
     <div class="opening-content">
 
-        <p class="small-title">
+        <div class="opening-top">
+            <span>UNDANGAN PERNIKAHAN</span>
+            <div class="ornament-line"></div>
+        </div>
+
+        <div class="opening-flower">❦</div>
+
+        <p class="opening-small">
             THE WEDDING OF
         </p>
 
-        <div class="flower">
-            ❦
-        </div>
-
         <h1>
             Rizkiatul
-            <span>&</span>
+            <span>&amp;</span>
             Didi
         </h1>
 
-        <p class="opening-date">
+        <div class="opening-date">
             20 · 12 · 2026
-        </p>
+        </div>
 
-        <div class="guest-box">
+        <div class="guest-card">
 
             <span>Kepada Yth.</span>
 
@@ -58,13 +65,13 @@
 
         </div>
 
-        <button id="openInvitation">
-            BUKA UNDANGAN
-            <span>♡</span>
+        <button id="openInvitation" class="open-button">
+            <span>BUKA UNDANGAN</span>
+            <b>♡</b>
         </button>
 
-        <p class="open-note">
-            Mohon maaf apabila ada kesalahan penulisan nama
+        <p class="opening-note">
+            Mohon maaf apabila terdapat kesalahan penulisan nama
         </p>
 
     </div>
@@ -73,18 +80,20 @@
 
 
 <!-- =====================================================
-     MAIN WEBSITE
+     WEBSITE
 ===================================================== -->
 
 <div id="website">
 
-<!-- NAVBAR -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
 <nav class="navbar">
 
-    <div class="logo">
-        R <span>&</span> D
-    </div>
+    <a href="#home" class="logo">
+        R <span>&amp;</span> D
+    </a>
 
     <div class="nav-menu">
 
@@ -98,7 +107,7 @@
 
     </div>
 
-    <button id="musicButton">
+    <button id="musicButton" class="music-button" aria-label="Musik">
         ♫
     </button>
 
@@ -111,56 +120,50 @@
 
 <section id="home" class="hero">
 
-    <div class="hero-background"></div>
-
+    <div class="hero-image"></div>
     <div class="hero-overlay"></div>
 
-    <div class="floating-flower flower-one">
-        ❀
-    </div>
+    <div class="hero-pattern"></div>
 
-    <div class="floating-flower flower-two">
-        ✿
-    </div>
-
-    <div class="floating-flower flower-three">
-        ❁
-    </div>
+    <div class="hero-flower flower-a">❀</div>
+    <div class="hero-flower flower-b">❁</div>
+    <div class="hero-flower flower-c">✿</div>
 
     <div class="hero-content reveal">
 
-        <p class="small-title light">
-            WE ARE GETTING MARRIED
+        <p class="hero-top">
+            BISMILLAHIRRAHMANIRRAHIM
         </p>
 
         <p class="script">
-            The Wedding of
+            The Wedding Of
         </p>
 
         <h2>
             Rizkiatul
-            <i>&</i>
+            <i>&amp;</i>
             Didi
         </h2>
 
         <div class="gold-divider">
+            <span></span>
             ❦
+            <span></span>
         </div>
 
         <p class="hero-date">
             20 Desember 2026
         </p>
 
-        <p class="hero-location">
+        <p class="hero-place">
             Jakarta · Indonesia
         </p>
 
     </div>
 
-    <a href="#welcome" class="scroll-down">
-        SCROLL
-        <br>
-        ↓
+    <a href="#welcome" class="scroll-indicator">
+        <span>SCROLL</span>
+        <b>↓</b>
     </a>
 
 </section>
@@ -172,9 +175,12 @@
 
 <section id="welcome" class="section welcome">
 
-    <div class="container reveal">
+    <div class="batik-corner corner-left"></div>
+    <div class="batik-corner corner-right"></div>
 
-        <p class="small-title">
+    <div class="container narrow reveal">
+
+        <p class="eyebrow">
             BISMILLAHIRRAHMANIRRAHIM
         </p>
 
@@ -187,26 +193,22 @@
             ❦
         </div>
 
-        <p class="quote">
-
+        <p class="quran">
             "Dan di antara tanda-tanda kekuasaan-Nya ialah
             Dia menciptakan untukmu pasangan hidup dari
             jenismu sendiri supaya kamu merasa tenteram
             kepadanya."
-
         </p>
 
-        <p class="quote-source">
+        <p class="source">
             QS. Ar-Rum : 21
         </p>
 
-        <p class="description">
-
+        <p class="body-text">
             Dengan memohon rahmat dan ridho Allah SWT,
             kami bermaksud mengundang Bapak/Ibu/Saudara/i
             untuk hadir dan menjadi bagian dari hari bahagia
             kami.
-
         </p>
 
     </div>
@@ -224,7 +226,7 @@
 
         <div class="section-heading reveal">
 
-            <p class="small-title">
+            <p class="eyebrow">
                 THE HAPPY COUPLE
             </p>
 
@@ -239,24 +241,26 @@
 
         </div>
 
+        <div class="couple-grid">
 
-        <div class="couple-wrapper">
-
-
-            <!-- GROOM -->
+            <!-- PRIA -->
 
             <div class="person reveal">
 
-                <div class="portrait">
+                <div class="photo-frame">
 
-                    <img
-                        src="pria.jpg"
-                        alt="Didi"
-                    >
+                    <div class="photo-inner">
+
+                        <img
+                            src="pria.JPG"
+                            alt="Didi"
+                        >
+
+                    </div>
 
                 </div>
 
-                <p class="role">
+                <p class="person-role">
                     THE GROOM
                 </p>
 
@@ -264,36 +268,40 @@
                     Didi
                 </h3>
 
-                <p>
+                <p class="parents">
                     Putra dari
                 </p>
 
                 <strong>
-                    Dadan & Jubaedah
+                    Dadan &amp; Jubaedah
                 </strong>
 
             </div>
 
 
-            <div class="and-symbol reveal">
-                &
+            <div class="couple-and reveal">
+                <span>&amp;</span>
             </div>
 
 
-            <!-- BRIDE -->
+            <!-- WANITA -->
 
             <div class="person reveal">
 
-                <div class="portrait">
+                <div class="photo-frame">
 
-                    <img
-                        src="wanita.jpg"
-                        alt="Rizkiatul Fuaziah"
-                    >
+                    <div class="photo-inner">
+
+                        <img
+                            src="wanita.JPG"
+                            alt="Rizkiatul Fuaziah"
+                        >
+
+                    </div>
 
                 </div>
 
-                <p class="role">
+                <p class="person-role">
                     THE BRIDE
                 </p>
 
@@ -301,12 +309,12 @@
                     Rizkiatul Fuaziah
                 </h3>
 
-                <p>
+                <p class="parents">
                     Putri dari
                 </p>
 
                 <strong>
-                    Endang Sukandar & Iis Fatimah
+                    Endang Sukandar &amp; Iis Fatimah
                 </strong>
 
             </div>
@@ -322,11 +330,13 @@
      COUNTDOWN
 ===================================================== -->
 
-<section class="countdown">
+<section class="countdown-section">
+
+    <div class="countdown-pattern"></div>
 
     <div class="container reveal">
 
-        <p class="small-title light">
+        <p class="eyebrow light">
             SAVE THE DATE
         </p>
 
@@ -334,24 +344,24 @@
             Menuju Hari Bahagia
         </h2>
 
-        <div class="countdown-box">
+        <div class="countdown">
 
-            <div>
+            <div class="count-box">
                 <strong id="days">00</strong>
                 <span>Hari</span>
             </div>
 
-            <div>
+            <div class="count-box">
                 <strong id="hours">00</strong>
                 <span>Jam</span>
             </div>
 
-            <div>
+            <div class="count-box">
                 <strong id="minutes">00</strong>
                 <span>Menit</span>
             </div>
 
-            <div>
+            <div class="count-box">
                 <strong id="seconds">00</strong>
                 <span>Detik</span>
             </div>
@@ -373,7 +383,7 @@
 
         <div class="section-heading reveal">
 
-            <p class="small-title">
+            <p class="eyebrow">
                 OUR LOVE STORY
             </p>
 
@@ -392,21 +402,25 @@
         <div class="timeline">
 
 
-            <article class="story-card reveal">
+            <article class="story-item reveal">
 
-                <div class="story-image">
+                <div class="story-number">
+                    01
+                </div>
+
+                <div class="story-photo">
 
                     <img
-                        src="foto1.jpg"
+                        src="foto1.JPG"
                         alt="Awal Pertemuan"
                     >
 
                 </div>
 
-                <div class="story-content">
+                <div class="story-text">
 
                     <span>
-                        01 · AWAL PERTEMUAN
+                        AWAL PERTEMUAN
                     </span>
 
                     <h3>
@@ -414,12 +428,10 @@
                     </h3>
 
                     <p>
-
                         Berawal dari sebuah pertemuan sederhana
                         yang tidak pernah kami rencanakan.
                         Sebuah percakapan kecil berubah menjadi
                         awal dari cerita yang begitu berarti.
-
                     </p>
 
                 </div>
@@ -427,21 +439,25 @@
             </article>
 
 
-            <article class="story-card reverse reveal">
+            <article class="story-item reverse reveal">
 
-                <div class="story-image">
+                <div class="story-number">
+                    02
+                </div>
+
+                <div class="story-photo">
 
                     <img
-                        src="foto2.jpg"
+                        src="foto2.JPG"
                         alt="Mulai Mengenal"
                     >
 
                 </div>
 
-                <div class="story-content">
+                <div class="story-text">
 
                     <span>
-                        02 · MULAI MENGENAL
+                        MULAI MENGENAL
                     </span>
 
                     <h3>
@@ -449,12 +465,10 @@
                     </h3>
 
                     <p>
-
                         Hari demi hari kami mulai mengenal
                         satu sama lain. Dari obrolan sederhana
                         tumbuh rasa nyaman, dan dari rasa nyaman
                         tumbuh rasa percaya.
-
                     </p>
 
                 </div>
@@ -462,21 +476,25 @@
             </article>
 
 
-            <article class="story-card reveal">
+            <article class="story-item reveal">
 
-                <div class="story-image">
+                <div class="story-number">
+                    03
+                </div>
+
+                <div class="story-photo">
 
                     <img
-                        src="foto3.jpg"
+                        src="foto3.JPG"
                         alt="Menjalin Hubungan"
                     >
 
                 </div>
 
-                <div class="story-content">
+                <div class="story-text">
 
                     <span>
-                        03 · MENJALIN HUBUNGAN
+                        MENJALIN HUBUNGAN
                     </span>
 
                     <h3>
@@ -484,12 +502,10 @@
                     </h3>
 
                     <p>
-
                         Tidak semua perjalanan selalu mudah.
                         Kami belajar memahami perbedaan,
                         menjaga kepercayaan, dan saling
                         menguatkan dalam setiap keadaan.
-
                     </p>
 
                 </div>
@@ -497,21 +513,25 @@
             </article>
 
 
-            <article class="story-card reverse reveal">
+            <article class="story-item reverse reveal">
 
-                <div class="story-image">
+                <div class="story-number">
+                    04
+                </div>
+
+                <div class="story-photo">
 
                     <img
-                        src="foto4.jpg"
+                        src="foto4.JPG"
                         alt="Menuju Pernikahan"
                     >
 
                 </div>
 
-                <div class="story-content">
+                <div class="story-text">
 
                     <span>
-                        04 · MENUJU PERNIKAHAN
+                        MENUJU PERNIKAHAN
                     </span>
 
                     <h3>
@@ -519,18 +539,15 @@
                     </h3>
 
                     <p>
-
                         Kini kami memilih untuk melanjutkan
                         perjalanan dalam sebuah ikatan suci.
                         Semoga cinta ini menjadi tempat untuk
                         pulang, bertumbuh, dan menua bersama.
-
                     </p>
 
                 </div>
 
             </article>
-
 
         </div>
 
@@ -549,7 +566,7 @@
 
         <div class="section-heading reveal">
 
-            <p class="small-title">
+            <p class="eyebrow">
                 SAVE THE DATE
             </p>
 
@@ -557,19 +574,23 @@
                 Hari Bahagia Kami
             </h2>
 
+            <p>
+                Dengan penuh kebahagiaan,
+                kami menantikan kehadiran Anda.
+            </p>
+
         </div>
 
 
         <div class="event-grid">
 
-
             <div class="event-card reveal">
 
-                <div class="event-icon">
+                <div class="event-symbol">
                     ☾
                 </div>
 
-                <p class="role">
+                <p class="event-type">
                     AKAD NIKAH
                 </p>
 
@@ -577,28 +598,30 @@
                     Minggu
                 </h3>
 
-                <strong>
+                <div class="event-date">
                     20 Desember 2026
-                </strong>
+                </div>
 
                 <p>
                     08.00 WIB – selesai
                 </p>
 
-                <div class="event-place">
+                <div class="event-line"></div>
+
+                <strong>
                     Gedung Graha Pernikahan
-                </div>
+                </strong>
 
             </div>
 
 
             <div class="event-card reveal">
 
-                <div class="event-icon">
+                <div class="event-symbol">
                     ❀
                 </div>
 
-                <p class="role">
+                <p class="event-type">
                     RESEPSI
                 </p>
 
@@ -606,37 +629,49 @@
                     Minggu
                 </h3>
 
-                <strong>
+                <div class="event-date">
                     20 Desember 2026
-                </strong>
+                </div>
 
                 <p>
                     11.00 – 14.00 WIB
                 </p>
 
-                <div class="event-place">
+                <div class="event-line"></div>
+
+                <strong>
                     Gedung Graha Pernikahan
-                </div>
+                </strong>
 
             </div>
-
 
         </div>
 
 
-        <div class="map-area reveal">
+        <div class="location-box reveal">
 
-            <p>
-                📍 Jl. Bahagia Bersama No. 27,
-                Jakarta
-            </p>
+            <div class="location-icon">
+                ♧
+            </div>
+
+            <div>
+                <h3>
+                    Lokasi Acara
+                </h3>
+
+                <p>
+                    Jl. Bahagia Bersama No. 27,
+                    Jakarta
+                </p>
+            </div>
 
             <a
                 href="https://maps.google.com"
                 target="_blank"
+                rel="noopener"
                 class="outline-button"
             >
-                BUKA GOOGLE MAPS
+                BUKA MAPS
             </a>
 
         </div>
@@ -656,7 +691,7 @@
 
         <div class="section-heading reveal">
 
-            <p class="small-title">
+            <p class="eyebrow">
                 OUR MOMENTS
             </p>
 
@@ -664,33 +699,38 @@
                 Galeri
             </h2>
 
+            <p>
+                Beberapa momen yang kami simpan
+                dalam perjalanan cerita kami.
+            </p>
+
         </div>
 
 
         <div class="gallery-grid">
 
-            <div class="gallery-item large reveal">
-                <img src="foto1.jpg" alt="">
+            <div class="gallery-item gallery-large reveal">
+                <img src="foto1.JPG" alt="Momen 1">
             </div>
 
             <div class="gallery-item reveal">
-                <img src="foto2.jpg" alt="">
+                <img src="foto2.JPG" alt="Momen 2">
             </div>
 
             <div class="gallery-item reveal">
-                <img src="foto3.jpg" alt="">
+                <img src="foto3.JPG" alt="Momen 3">
             </div>
 
             <div class="gallery-item reveal">
-                <img src="foto4.jpg" alt="">
+                <img src="foto4.JPG" alt="Momen 4">
             </div>
 
-            <div class="gallery-item large reveal">
-                <img src="foto5.jpg" alt="">
+            <div class="gallery-item gallery-large reveal">
+                <img src="foto5.JPG" alt="Momen 5">
             </div>
 
             <div class="gallery-item reveal">
-                <img src="foto6.jpg" alt="">
+                <img src="foto6.JPG" alt="Momen 6">
             </div>
 
         </div>
@@ -701,7 +741,7 @@
 
 
 <!-- =====================================================
-     WEDDING GIFT
+     GIFT
 ===================================================== -->
 
 <section id="gift" class="section gift">
@@ -710,7 +750,7 @@
 
         <div class="section-heading reveal">
 
-            <p class="small-title">
+            <p class="eyebrow">
                 WEDDING GIFT
             </p>
 
@@ -719,11 +759,8 @@
             </h2>
 
             <p>
-
                 Doa dan kehadiran Anda merupakan hadiah
-                terindah bagi kami. Bagi yang ingin memberikan
-                tanda kasih, dapat melalui rekening berikut.
-
+                terindah bagi kami.
             </p>
 
         </div>
@@ -731,11 +768,11 @@
 
         <div class="bank-card reveal">
 
-            <div class="bank-header">
+            <div class="bank-top">
 
-                <strong>
+                <div class="bank-logo">
                     BRI
-                </strong>
+                </div>
 
                 <span>
                     WEDDING GIFT
@@ -743,7 +780,7 @@
 
             </div>
 
-            <p>
+            <p class="bank-name">
                 BANK RAKYAT INDONESIA
             </p>
 
@@ -751,9 +788,9 @@
                 1234567890
             </h3>
 
-            <small>
-                a.n. Rizkiatul & Didi
-            </small>
+            <p>
+                a.n. Rizkiatul &amp; Didi
+            </p>
 
             <button
                 id="copyBank"
@@ -761,6 +798,8 @@
             >
                 SALIN NOMOR REKENING
             </button>
+
+            <small id="copyStatus"></small>
 
         </div>
 
@@ -779,8 +818,8 @@
 
         <div class="section-heading reveal">
 
-            <p class="small-title">
-                UCAPAN & DOA
+            <p class="eyebrow">
+                UCAPAN &amp; DOA
             </p>
 
             <h2>
@@ -789,14 +828,13 @@
 
             <p>
                 Tinggalkan doa dan ucapan terbaik
-                untuk Rizkiatul & Didi.
+                untuk Rizkiatul &amp; Didi.
             </p>
 
         </div>
 
 
-        <div class="wishes-wrapper">
-
+        <div class="wish-wrapper">
 
             <form id="wishForm" class="wish-form reveal">
 
@@ -809,20 +847,18 @@
                         placeholder="Masukkan nama Anda"
                         required
                     >
-
                 </label>
 
 
                 <label>
-                    Ucapan & Doa
+                    Ucapan &amp; Doa
 
                     <textarea
                         id="wishMessage"
-                        rows="6"
+                        rows="5"
                         placeholder="Tulis ucapan terbaik Anda..."
                         required
                     ></textarea>
-
                 </label>
 
 
@@ -843,7 +879,6 @@
                 class="wish-list reveal"
             ></div>
 
-
         </div>
 
     </div>
@@ -857,9 +892,9 @@
 
 <section class="section rsvp">
 
-    <div class="container reveal">
+    <div class="container narrow reveal">
 
-        <p class="small-title">
+        <p class="eyebrow">
             KONFIRMASI KEHADIRAN
         </p>
 
@@ -888,8 +923,9 @@
 
         <a
             id="whatsappButton"
-            class="outline-button"
+            class="outline-button whatsapp-button"
             target="_blank"
+            rel="noopener"
         >
             KONFIRMASI VIA WHATSAPP
         </a>
@@ -905,14 +941,12 @@
 
 <section class="closing">
 
-    <div class="closing-background"></div>
-
+    <div class="closing-image"></div>
     <div class="closing-overlay"></div>
-
 
     <div class="closing-content reveal">
 
-        <p class="small-title light">
+        <p class="eyebrow light">
             WITH LOVE
         </p>
 
@@ -922,12 +956,14 @@
 
         <h2>
             Rizkiatul
-            <i>&</i>
+            <i>&amp;</i>
             Didi
         </h2>
 
         <div class="gold-divider">
+            <span></span>
             ❦
+            <span></span>
         </div>
 
         <p>
@@ -940,20 +976,35 @@
 </section>
 
 
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer>
 
-    Rizkiatul Fuaziah & Didi
-    · 2026
-    · Made with ♡
+    <div class="footer-ornament">
+        ❦
+    </div>
+
+    <p>
+        Rizkiatul Fuaziah &amp; Didi
+    </p>
+
+    <small>
+        20 · 12 · 2026
+    </small>
 
 </footer>
 
 
-<!-- MUSIC -->
+<!-- =====================================================
+     MUSIC
+===================================================== -->
 
 <audio
     id="backgroundMusic"
     loop
+    preload="auto"
 >
 
     <source
@@ -965,6 +1016,11 @@
 
 
 </div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script src="script.js"></script>
 

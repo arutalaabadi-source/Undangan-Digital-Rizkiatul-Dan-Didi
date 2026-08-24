@@ -388,4 +388,73 @@ main{scroll-behavior:smooth}
 .atm-grid .atm-card{width:100%;max-width:none}
 .atm-bri{filter:hue-rotate(18deg) saturate(.9)}
 .atm-grid .atm-copy{cursor:pointer}
-@media(max-width:760px){.atm-grid{grid-template-columns:1fr;gap:20px}.atm-number{font-size:22px;letter-spacing:2px}.atm-bottom{gap:12px}}
+@media(max-width:760px){.atm-grid{grid-template-columns:1fr;gap:20px}.atm-number{font-size:22px;letter-spacing:2px}.atm-bottom{gap:12px}} 
+/* =========================================================
+   GUEST NAME — SUPPORT NAMA TAMU PANJANG
+========================================================= */
+
+.guest-box{
+  width:min(92vw, 620px);
+  max-width:620px;
+  margin:45px auto 22px;
+  padding:0 15px;
+  text-align:center;
+}
+
+.guest-box small{
+  display:block;
+  margin-bottom:7px;
+  font-size:9px;
+  letter-spacing:2px;
+  color:#aaa;
+}
+
+.guest-box strong{
+  display:block;
+  width:100%;
+  max-width:100%;
+
+  font-family:var(--serif);
+  font-size:clamp(21px, 4vw, 30px);
+  font-weight:500;
+  line-height:1.25;
+
+  color:#fff;
+  text-align:center;
+
+  /* Nama panjang otomatis turun baris */
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:normal;
+
+  /* Mencegah teks keluar layar */
+  box-sizing:border-box;
+}
+
+/* Untuk HP */
+@media(max-width:760px){
+  .guest-box{
+    width:calc(100vw - 50px);
+    max-width:520px;
+    padding:0 10px;
+    margin:35px auto 20px;
+  }
+
+  .guest-box strong{
+    font-size:clamp(20px, 6vw, 27px);
+    line-height:1.25;
+  }
+}
+
+/* HP kecil */
+@media(max-width:420px){
+  .guest-box{
+    width:calc(100vw - 45px);
+    padding:0 8px;
+  }
+
+  .guest-box strong{
+    font-size:clamp(19px, 6vw, 25px);
+    line-height:1.2;
+  }
+}
